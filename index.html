@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <title>1950+ California Fires</title>
+</head>
+
+<body>
+    <nav id="Home" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#Home">California Wildfires Since 1950</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#map">Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Details">Map details</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <p class="description">The interactive map below displays the perimeters of 16,069 wildfires that have spread
+        across California since 1950. <br>
+        California has a long history of being engulfed in smoke and flames on the daily and that hasn't changed.<br>
+        Whether the fires were started purposely by humans, on accident, or as the result of climate change, California
+        and those that live in high risk areas are hurting. <br>
+        Find a way that you can help California and those affected by the fires <a
+            href="https://www.cafirefoundation.org/" target="_blank">here</a>, <a href="https://www.cafirefoundation.org/" target="_blank">here</a>, or
+        <a href="https://www.redcross.org/donate/donation.html/" target="_blank">here</a>.<br> </p>
+
+    <div id="map" class="map_gis">
+        <p>Click the arrows on the left to view the map legend. The fire perimeters are colored by the amount of acres they spread across. Each of the five color bins countain about 3,214 different fires that fit in their respected bins range.</p>
+     <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Cali Fires" src="//dazqcstvro34ch5i.maps.arcgis.com/apps/Embed/index.html?webmap=dacfec1479dc4e8b9a3bb56cde0bdcc6&extent=-131.1216,31.3011,-106.8638,43.6472&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legend=true&disable_scroll=true&theme=light"></iframe></div></div>
+    </div>
+    <div id="Details">
+        <ul>
+            <li>
+                <p>
+                    <strong>YEAR_:</strong> The decade the fire occcured
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>STATE:</strong> The state the fire occured in
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>FIRE_NAME:</strong> The name of the fire</p>
+            </li>
+            <li>
+                <p>
+                    <strong>ALARM_DATE:</strong> Date the fire was reported</p>
+            </li>
+            <li>
+                <p>
+                    <strong>CONT_DATE:</strong> Date the fire was contained</p>
+            </li>
+            <li>
+                <p>
+                    <strong>CAUSE:</strong> What caused the fire</p>
+            </li>
+            <li>
+                <p>
+                    <strong>GIS_ACRES:</strong> How many acres the fire spread across</p>
+            </li>
+        </ul>
+    </div>
+    <p class="source">Data Source: <a href="https://gis.data.ca.gov/" target="_blank">California State Geoportal</a></p>
+</body>
+
+</html>
